@@ -35,11 +35,13 @@ class DocumentChunkWithScore(DocumentChunk):
 class Document(BaseModel):
     id: Optional[str] = None
     text: str
+    summary: Optional[str] = None
     metadata: Optional[DocumentMetadata] = None
 
 
 class DocumentWithChunks(Document):
     chunks: List[DocumentChunk]
+    summary: Optional[str] = None
 
 
 class DocumentMetadataFilter(BaseModel):
