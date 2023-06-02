@@ -1,0 +1,13 @@
+[
+    {
+      "id": "Unique Keyword describing the document",
+      "text": "Text of the document",
+      "summary" : "Summary of the document",
+      "source": "file",
+      "source_id": "filename",
+      "url": "url",
+      "created_at": "right now",
+      "author": "Roman"
+    }
+
+  ]
