@@ -1,25 +1,13 @@
 [
     {
-      "id": "123",
-      "text": "This is a document about something",
+      "id": "Unique Keyword describing the document",
+      "text": "Text of the document",
+      "summary" : "Summary of the document",
       "source": "file",
-      "source_id": "https://example.com/doc1",
-      "url": "https://example.com/doc1",
-      "created_at": "2021-01-01T12:00:00Z",
-      "author": "Alice"
-    },
-    {
-      "text": "This is another document about something else",
-      "source": "file",
-      "source_id": "doc2.txt",
-      "author": "Bob"
-    },
-    {
-      "id": "456",
-      "text": "This is Alice's phone number: 123-456-7890",
-      "source": "email",
-      "source_id": "567",
-      "created_at": "2021-01-02T13:00:00Z",
-      "author": "Alice"
+      "source_id": "filename",
+      "url": "url",
+      "created_at": "right now",
+      "author": "Roman"
     }
-]
+
+  ]

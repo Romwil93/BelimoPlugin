@@ -15,6 +15,7 @@ class DocumentMetadata(BaseModel):
     url: Optional[str] = None
     created_at: Optional[str] = None
     author: Optional[str] = None
+    summary: Optional[str] = None  # Added summary here
 
 
 class DocumentChunkMetadata(DocumentMetadata):
@@ -35,13 +36,11 @@ class DocumentChunkWithScore(DocumentChunk):
 class Document(BaseModel):
     id: Optional[str] = None
     text: str
-    summary: Optional[str] = None
     metadata: Optional[DocumentMetadata] = None
 
 
 class DocumentWithChunks(Document):
     chunks: List[DocumentChunk]
-    summary: Optional[str] = None
 
 
 class DocumentMetadataFilter(BaseModel):
@@ -49,6 +48,7 @@ class DocumentMetadataFilter(BaseModel):
     source: Optional[Source] = None
     source_id: Optional[str] = None
     author: Optional[str] = None
+    summary: Optional[str] = None  # If you want to filter by summary
     start_date: Optional[str] = None  # any date string format
     end_date: Optional[str] = None  # any date string format
 
